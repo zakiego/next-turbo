@@ -7,7 +7,7 @@ test("HelloAPI return name with value John Doe", async () => {
     method: "GET",
   });
 
-  await helloAPI(req, res);
+  helloAPI(req, res);
 
   expect(res._getStatusCode()).toBe(200);
   const resp = res._getJSONData();
